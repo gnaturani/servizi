@@ -1,0 +1,1190 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="js/leaflet/leaflet.css" type="text/css" rel="stylesheet" /><link href="js/jquery/jquery-ui.css" type="text/css" rel="stylesheet" /><link rel="stylesheet" type="text/css" href="/css/base.min.css?nocache=20160727a" /><link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.ashx" />
+	<script src="/js/jquery/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery/jquery-ui.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict();
+	</script>
+	<script src="/js/mootools-core-1.5.1.js" type="text/javascript"></script>
+	<script src="/js/mootools-more-1.5.1.js" type="text/javascript"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="/js/selectivizr.js?nocache=20141120a"></script>
+    <![endif]-->
+	<script type="text/javascript" src="/js/checkform.js?nocache=20160616a"></script>
+	<script type="text/javascript" src="/js/jsManager.js?nocache=20160708a"></script>
+	<script type="text/javascript" src="/js/slideshow.js?nocache=20141120a"></script>
+	<script type="text/javascript" src="/js/MenuMatic_0.68.4.js?nocache=20160616a"></script>
+	<script type="text/javascript" src="/js/cerabox/cerabox.min.js?nocache=20141120a"></script>
+    <script type="text/javascript" src="/js/mediabox/mediaboxAdvanced.js?nocache=20141120a"></script>
+	<script type="text/javascript" src="/js/DatePicker/DatePickerFull.js?nocache=20141120a"></script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDRNBF_IovUuNeDLWGwg4YI9ZfJ1eg9ch8"></script>-->
+   <script type="text/javascript" src="/js/leaflet/leaflet.js?nocache=20141120a"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyD8SIwFdLk4l-q0DciQ2kWpE6jlJDYeJwg"></script>-->
+
+    <script type="text/javascript">
+        Locale.use('it-IT');
+
+        window.addEvent('load', function () {
+            equalize('#layout-area2, #layout-area3, #layout-area4');
+            equalize('#layout-area3 .col');
+            $$('.popup-image').cerabox({ group: false, displayTitle: false });
+			//console.log('');
+
+
+        });
+        window.addEvent('domready', function () {
+            paginazioneBoxAfter();
+
+        });
+        function paginazioneBoxAfter() {
+            $$('.box-file-multipli').cerabox({ group: false, displayTitle: true, mobileView: false });
+            $$('.box-page-ricerca-multipli').cerabox({ group: false, displayTitle: true, mobileView: false });
+            $$('.box-rassegna-multipli').cerabox({ group: false, displayTitle: true, mobileView: false });
+            $$('.aps-cer').cerabox({ group: false, displayTitle: true, mobileView: false });
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        function Stagione(SId) {
+            CaricaPaginaGet('/risultati-classifiche.aspx?act=settimana', 'SId=' + SId, 'lbSettimana');
+            CaricaPaginaGet('/risultati-classifiche.aspx?act=campionato', 'SId=' + SId, 'lbCampionato', 'Campionato(' + SId + ', \'\');');
+        }
+        function Campionato(SId, CId) {
+            CaricaPaginaGet('/risultati-classifiche.aspx?act=societa', 'SId=' + SId + '&CId=' + CId, 'lbSocieta');
+        }
+        function EsportaXls(ff) {
+            var pp = window.open('about:blank', 'popXls');
+            ff.target = 'popXls';
+            var xAction = ff.action;
+            ff.action = 'esporta-risultati.aspx';
+            ff.submit();
+            ff.target = '';
+            ff.action = xAction;
+            pp.focus();
+        }
+    </script>
+<link href="/files/2192/0/Css/1199/stile.css" type="text/css" rel="stylesheet" /><meta property="og:title" content="FIPAV - CT Piacenza | Risultati e classifiche" /><meta property="og:type" content="article" /><meta property="og:url" content="http://www.fipavpiacenza.it/risultati-classifiche.aspx?ComitatoId=74&amp;StId=1624&amp;DataDa=&amp;StatoGara=&amp;CId=51629&amp;SId=&amp;PId=9653&amp;btFiltro=CERCA" /><meta property="og:image" content="http://www.fipavpiacenza.it/files/2192/Logo/Logo-Fipav-PC.jpg" /><meta property="og:site_name" content="FIPAV - CT Piacenza" /><meta property="og:description" content="" /><title>
+	FIPAV - CT Piacenza | Risultati e classifiche
+</title></head>
+<body>
+
+
+<div id="layout-container" class="clsP_9653">
+	<div id="layout-area1" style="width:100%">
+		<div class="col col-4">
+
+<div id="BoxId_29042" name="BoxId_29042" class="box box-4">
+	<div class="">
+<div class="box-imglink-container">
+	<a  target="" class="box-imglink" style="width:980px;height:150px;float:none;margin-left:auto;margin-right:auto;" id="box-imglink-29042"><img id="imglink-29042" src="/files/2192/0/Editor/Image/Testata2.jpg?maxwidth=980&maxheight=980"></a>
+</div>
+	</div>
+</div>
+
+<div id="BoxId_28373" name="BoxId_28373" class="box box-4">
+	<div class=""style="background: transparent;"><div class="box-menu menu-horizontal" id="box_menu_hor_28373" style="height: 45px;">
+<ul id="nav">
+	<li><a href="/pagina-index.aspx?PId=9837">HOME</a></li>
+	<li><a href="#" onclick="return false;">ORGANIZZAZIONE</a>
+<ul>
+	<li><a href="/pagina.aspx?PId=9663">Comitato</a></li>
+	<li><a href="/pagina.aspx?PId=9658">Commissioni tecniche</a></li>
+	<li><a href="/pagina.aspx?PId=9660">Contatti e Info</a></li>
+	<li><a href="/pagina.aspx?PId=9805">La nostra storia</a></li>
+	<li><a href="/pagina.aspx?PId=9959">Norme e Modulistica</a></li></ul></li>
+	<li><a href="#" onclick="return false;">SOCIETA'</a>
+<ul>
+	<li><a href="/elenco-societa2.aspx?PId=9691">Le nostre Società</a></li></ul></li>
+	<li><a class="current" href="#" onclick="return false;">CAMPIONATI</a>
+<ul>
+	<li><a class="current" href="/risultati-classifiche.aspx?PId=9653">Gare e Risultati</a></li>
+	<li><a href="/spostamenti-gare.aspx?PId=9654">Spostamenti gare</a></li>
+	<li><a href="/pagina.aspx?PId=9652">Indizioni</a></li>
+	<li><a href="/pagina.aspx?PId=9670">Selezioni Territoriali</a>
+<ul>
+	<li><a href="/pagina.aspx?PId=9676">Trofeo delle Province 2016</a></li>
+	<li><a href="/pagina.aspx?PId=9677">Trofeo delle Province 2017</a></li></ul></li></ul></li>
+	<li><a href="#" onclick="return false;">ALLENATORI</a>
+<ul>
+	<li><a href="/elenco-allenatori.aspx?PId=9645">Elenco allenatori</a></li>
+	<li><a href="/disponibilita-allenatori.aspx?PId=9646">Disponibilità ad allenare</a></li>
+	<li><a href="/iscrizione-corsi.aspx?PId=9656">CQT Allenatori</a></li></ul></li>
+	<li><a href="#" onclick="return false;">ARBITRI</a>
+<ul>
+	<li><a href="/ufficiali-di-gara.aspx?PId=9953">Elenco Arbitri</a></li>
+	<li><a href="/pagina.aspx?PId=9961">Albo Giudice Unico</a></li></ul></li>
+	<li><a href="#" onclick="return false;">VOLLEY S3</a>
+<ul>
+	<li><a href="/pagina.aspx?PId=13233">Regole di gioco VOLLEY S3</a></li>
+	<li><a href="/pagina.aspx?PId=9963">CIRCUITO PALLAVOLANDIA S3</a></li></ul></li>
+	<li><a href="/pagina.aspx?PId=9648">BEACH VOLLEY</a></li>
+	<li><a href="/pagina.aspx?PId=9651">SITTING VOLLEY</a></li>
+	<li><a href="/pagina.aspx?PId=9643">AREA COMUNICAZIONE</a>
+<ul>
+	<li><a href="/pagina.aspx?PId=9682">Fipav OnLine</a></li>
+	<li><a href="/gallery-foto.aspx?PId=9649">Photo Gallery</a></li>
+	<li><a href="/gallery-video.aspx?PId=9650">Video Gallery</a></li>
+	<li><a href="/pagina.aspx?PId=9662">Scuola e Promozione</a></li>
+	<li><a href="/news.aspx?PId=9673">Archivio News</a></li>
+	<li><a href="/pagina.aspx?PId=10019">Convenzioni</a></li>
+	<li><a href="/pagina.aspx?PId=10192">Rassegna Stampa</a></li>
+	<li><a href="/comunicati.aspx?PId=10195">Comunicati</a></li>
+	<li><a href="#" onclick="return false;">Trasparenza</a>
+<ul>
+	<li><a href="/pagina.aspx?PId=12934">Bilancio</a></li></ul></li></ul></li></ul></div>
+
+<script type="text/javascript">
+//<![CDATA[
+if(document.getElementById('nav')){var myMenu = new MenuMatic({ matchWidthMode: true, hideDelay: 200, stretchMainMenu:true });$('box_menu_hor_28373').setStyle('height','');}
+// ]]>
+</script>
+	</div>
+</div>
+		</div>
+	</div>
+	<div id="layout-area-corpo">
+	<div id="layout-area2" style="width:25%">
+		<div class="col col-1">
+
+
+<div id="BoxId_28389" name="BoxId_28389" class="box box-1">
+	<div class="box-border"><div class="box-title">SCADENZE PER LE SOCIETA'</div>
+<div class="box-imglink-container">
+	<a  href="/pagina.aspx?PId=13232"  target="" class="box-imglink" style="width:225px;height:133px;float:none;margin-left:auto;margin-right:auto;" id="box-imglink-28389"><img id="imglink-28389" src="/files/2192/0/Editor/Image/Scadenzario2.jpg?maxwidth=225&maxheight=225"></a>
+</div>
+	</div>
+</div>
+
+<div id="BoxId_28374" name="BoxId_28374" class="box box-1">
+	<div class="box-border"><div class="box-title">LINK UTILI</div>
+		<div class="box-banner-container">
+			<div id="box-banner-28374" class="box-banner-list" style="width: 100%;">
+				<a class="box-banner-slide" href="http://www.legavolleyfemminile.it/" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13501', '', '');" title="Serie A Femminile" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Serie-AF.png" alt="Serie A Femminile" /></a>
+				<a class="box-banner-slide" href="http://www.fipavcrer.it/" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13498', '', '');" title="Fipav CRER" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-FipavCrer.png" alt="Fipav CRER" /></a>
+				<a class="box-banner-slide" href="http://www.coni.it/it/registro-societa-sportive.html" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13381', '', '');" title="Registro Nazionale CONI delle A.S.D." target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Registro_CONI.png" alt="Registro Nazionale CONI delle A.S.D." /></a>
+				<a class="box-banner-slide" href="/pagina.aspx?PId=9682" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13387', '', '');" title="FIPAV OnLine" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-FIPAV_Online.png" alt="FIPAV OnLine" /></a>
+				<a class="box-banner-slide" href="http://piacenza.portalefipav.net/MngArea/home.aspx" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=14682', '', '');" title="Accesso Area Riservata" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-Accesso-Area-Riservata.jpg" alt="Accesso Area Riservata" /></a>
+				<a class="box-banner-slide" href="http://www.federvolley.it/index.php?page=84&area=9&m=1&sm=84" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13382', '', '');" title="Tesseramento Online" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Tessonline.jpg" alt="Tesseramento Online" /></a>
+				<a class="box-banner-slide" href="http://www.overtheblock.it/calendario-risultati-serie-bm-b1f-b2f" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13499', '', '');" title="Serie B" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Serie-B.png" alt="Serie B" /></a>
+				<a class="box-banner-slide" href="http://guidapratica.federvolley.it/" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=14968', '', '');" title="Guida pratica" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-FIPAV_Guida_Pratica.png" alt="Guida pratica" /></a>
+				<a class="box-banner-slide" href="http://www.legavolley.it/" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13500', '', '');" title="Serie A Maschile" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Serie-AM.png" alt="Serie A Maschile" /></a>
+				<a class="box-banner-slide" href="http://www.ausl.pc.it/dedicato/sport/tutela_attivita_sportive/cert_att_agonistica.asp" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=14973', '', '');" title="Certificazione di idoneità alla pratica sportiva agonistica" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-Certificazione-idoneita.jpg" alt="Certificazione di idoneità alla pratica sportiva agonistica" /></a>
+				<a class="box-banner-slide" href="http://www.portalefipav.net/mngArea/login.asp" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13383', '', '');" title="Portale FIPAV" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-Portale-FIPAV.png" alt="Portale FIPAV" /></a>
+				<a class="box-banner-slide" href="http://www.federvolley.it/sportello-fiscale-0" onclick="CaricaPaginaGet('/risultati-classifiche.aspx?act=ClickLink&LinkId=13380', '', '');" title="Sportello fiscale" target="_blank"><img src="/files/2192/0/Link/Link Fipav/Logo-link-FIPAV_Fiscale.png" alt="Sportello fiscale" /></a>
+			</div>
+		</div>
+<script type="text/javascript">
+	//<![CDATA[
+	BoxBanner('img', 28374, '', false,5000, 1);
+	//]]>
+</script>
+	</div>
+</div>
+
+<div id="BoxId_28829" name="BoxId_28829" class="box box-1">
+	<div class="box-border"><div class="box-title">SOSTENIAMO PROGETTO VITA</div>
+<div class="box-imglink-container">
+	<a  href="http://www.progetto-vita.eu/"  target="" class="box-imglink" style="width:193px;height:225px;float:none;margin-left:auto;margin-right:auto;" id="box-imglink-28829"><img id="imglink-28829" src="/files/2192/0/Editor/Image/Progetto-Vita.png?maxwidth=225&maxheight=225"></a>
+<div class="box-imglink-text"><div style="text-align:justify">Progetto Vita &egrave; la rete di defibrillatori semiautomatici dislocati in punti strategici della citt&agrave; e della provincia di Piacenza utilizzabili da personale non sanitario.</div>
+</div>
+</div>
+	</div>
+</div>
+
+<div id="BoxId_30419" name="BoxId_30419" class="box box-1">
+	<div class=""><div class="box-title">COMUNICATO</div><div class="box-text"><div style="text-align:justify"><span style="font-size:16px">Il Comitato Territoriale Fipav di Piacenza comunica che la struttura del Ferriere Sport Camp non rientra pi&ugrave; nelle proprie disponibilit&agrave; di gestione.<br />
+Per qualsiasi richiesta invitiamo a contattare il numero 348 3924627.</span></div>
+</div>
+	</div>
+</div>
+		</div>
+	</div>
+	<div id="layout-area3" style="width:75%">
+		<div class="col col-3">
+	<h1>Risultati e classifiche delle gare</h1>
+<div id="BoxId_28383" class="box box-3">
+	<div class="box-padding">
+	<form id="filtro" method="get" action="/risultati-classifiche.aspx">
+		<input type="hidden" name="ComitatoId" value="74">
+		<label>
+			Stagione sportiva:<br />
+			<select name="StId" tabindex="1" class="input-select" onchange="Stagione(this.options[this.selectedIndex].value)">
+				<option value="1624" selected="selected">Stagione Sportiva 2019 / 2020</option>
+				<option value="1505">Stagione Sportiva 2018 / 2019</option>
+				<option value="1386">Stagione Sportiva 2017 / 2018</option>
+				<option value="1267">Stagione Sportiva 2016 / 2017</option>
+				<option value="1148">Stagione Sportiva 2015 / 2016</option>
+				<option value="1029">Stagione Sportiva 2014 / 2015</option>
+				<option value="910">Stagione Sportiva 2013 / 2014</option>
+				<option value="791">Stagione Sportiva 2012 / 2013</option>
+				<option value="673">Stagione Sportiva 2011 / 2012</option>
+				<option value="322">Stagione Sportiva 2010 / 2011</option>
+				<option value="321">Stagione Sportiva 2009 / 2010</option>
+				<option value="320">Stagione Sportiva 2008 / 2009</option>
+				<option value="319">Stagione Sportiva 2007 / 2008</option>
+				<option value="318">Stagione Sportiva 2006 / 2007</option>
+				<option value="317">Stagione Sportiva 2005 / 2006</option>
+			</select>
+		</label>
+		<label id="lbSettimana">
+			Settimana: <br />
+			<select name="DataDa" class="input-select" tabindex="2">
+				<option value="">Tutte le date..</option>
+				<option value="01/07/2019">dal 01/07/2019 al 07/07/2019</option>
+				<option value="08/07/2019">dal 08/07/2019 al 14/07/2019</option>
+				<option value="15/07/2019">dal 15/07/2019 al 21/07/2019</option>
+				<option value="22/07/2019">dal 22/07/2019 al 28/07/2019</option>
+				<option value="29/07/2019">dal 29/07/2019 al 04/08/2019</option>
+				<option value="05/08/2019">dal 05/08/2019 al 11/08/2019</option>
+				<option value="12/08/2019">dal 12/08/2019 al 18/08/2019</option>
+				<option value="19/08/2019">dal 19/08/2019 al 25/08/2019</option>
+				<option value="26/08/2019">dal 26/08/2019 al 01/09/2019</option>
+				<option value="02/09/2019">dal 02/09/2019 al 08/09/2019</option>
+				<option value="09/09/2019">dal 09/09/2019 al 15/09/2019</option>
+				<option value="16/09/2019">dal 16/09/2019 al 22/09/2019</option>
+				<option value="23/09/2019">dal 23/09/2019 al 29/09/2019</option>
+				<option value="30/09/2019">dal 30/09/2019 al 06/10/2019</option>
+				<option value="07/10/2019">dal 07/10/2019 al 13/10/2019</option>
+				<option value="14/10/2019">dal 14/10/2019 al 20/10/2019</option>
+				<option value="21/10/2019">dal 21/10/2019 al 27/10/2019</option>
+				<option value="28/10/2019">dal 28/10/2019 al 03/11/2019</option>
+				<option value="04/11/2019">dal 04/11/2019 al 10/11/2019</option>
+				<option value="11/11/2019">dal 11/11/2019 al 17/11/2019</option>
+				<option value="18/11/2019">dal 18/11/2019 al 24/11/2019</option>
+				<option value="25/11/2019">dal 25/11/2019 al 01/12/2019</option>
+				<option value="02/12/2019">dal 02/12/2019 al 08/12/2019</option>
+				<option value="09/12/2019">dal 09/12/2019 al 15/12/2019</option>
+				<option value="16/12/2019">dal 16/12/2019 al 22/12/2019</option>
+				<option value="23/12/2019">dal 23/12/2019 al 29/12/2019</option>
+				<option value="30/12/2019">dal 30/12/2019 al 05/01/2020</option>
+				<option value="06/01/2020">dal 06/01/2020 al 12/01/2020</option>
+				<option value="13/01/2020">dal 13/01/2020 al 19/01/2020</option>
+				<option value="20/01/2020">dal 20/01/2020 al 26/01/2020</option>
+				<option value="27/01/2020">dal 27/01/2020 al 02/02/2020</option>
+				<option value="03/02/2020">dal 03/02/2020 al 09/02/2020</option>
+				<option value="10/02/2020">dal 10/02/2020 al 16/02/2020</option>
+				<option value="17/02/2020">dal 17/02/2020 al 23/02/2020</option>
+				<option value="24/02/2020">dal 24/02/2020 al 01/03/2020</option>
+				<option value="02/03/2020">dal 02/03/2020 al 08/03/2020</option>
+				<option value="09/03/2020">dal 09/03/2020 al 15/03/2020</option>
+				<option value="16/03/2020">dal 16/03/2020 al 22/03/2020</option>
+				<option value="23/03/2020">dal 23/03/2020 al 29/03/2020</option>
+				<option value="30/03/2020">dal 30/03/2020 al 05/04/2020</option>
+				<option value="06/04/2020">dal 06/04/2020 al 12/04/2020</option>
+				<option value="13/04/2020">dal 13/04/2020 al 19/04/2020</option>
+				<option value="20/04/2020">dal 20/04/2020 al 26/04/2020</option>
+				<option value="27/04/2020">dal 27/04/2020 al 03/05/2020</option>
+				<option value="04/05/2020">dal 04/05/2020 al 10/05/2020</option>
+				<option value="11/05/2020">dal 11/05/2020 al 17/05/2020</option>
+				<option value="18/05/2020">dal 18/05/2020 al 24/05/2020</option>
+				<option value="25/05/2020">dal 25/05/2020 al 31/05/2020</option>
+				<option value="01/06/2020">dal 01/06/2020 al 07/06/2020</option>
+				<option value="08/06/2020">dal 08/06/2020 al 14/06/2020</option>
+				<option value="15/06/2020">dal 15/06/2020 al 21/06/2020</option>
+				<option value="22/06/2020">dal 22/06/2020 al 28/06/2020</option>
+				<option value="29/06/2020">dal 29/06/2020 al 30/06/2020</option>
+			</select>
+		</label>
+		<label class="size-0_5">
+			Stato gara:<br />
+			<select name="StatoGara" class="input-select-0_5" tabindex="3">
+				<option value="">Tutti..</option>
+				<option value="1">Disputate</option>
+				<option value="0">Da disputare</option>
+			</select>
+		</label>
+		<label id="lbCampionato" class="size-3">
+			Campionato:<br />
+			<select name="CId" class="input-select-3" tabindex="4" onchange="Campionato(1624, this.options[this.selectedIndex].value)">
+					<option value="">Tutti i campionati..</option>
+				</optgroup>
+				<optgroup label="PRIMA DIVISIONE FEMMINILE">
+					<option value="51270">PRIMA DIVISIONE FEMMINILE</option>
+				</optgroup>
+				<optgroup label="SECONDA DIVISIONE FEMMINILE">
+					<option value="51628">SECONDA DIVISIONE FEMMINILE GIRONE A</option>
+					<option value="51629" selected="selected">SECONDA DIVISIONE FEMMINILE GIRONE B</option>
+				</optgroup>
+				<optgroup label="UNDER 13 FEMMINILE">
+					<option value="51636">UNDER 13 FEMMINILE GIRONE A</option>
+					<option value="51637">UNDER 13 FEMMINILE GIRONE B</option>
+					<option value="51638">UNDER 13 FEMMINILE GIRONE C</option>
+					<option value="51639">SPAREGGIO U13F PER ACCESSO SECONDA FASE</option>
+				</optgroup>
+				<optgroup label="UNDER 14 FEMMINILE">
+					<option value="51644">UNDER 14 FEMMINILE GIRONE A</option>
+					<option value="51645">UNDER 14 FEMMINILE GIRONE B</option>
+					<option value="51647">UNDER 14 FEMMINILE GIRONE C</option>
+					<option value="51646">SPAREGGIO U14F PER ACCESSO SECONDA FASE</option>
+				</optgroup>
+				<optgroup label="UNDER 16 FEMMINILE">
+					<option value="51662">UNDER 16 FEMMINILE GIRONE A</option>
+					<option value="51665">UNDER 16 FEMMINILE GIRONE B</option>
+					<option value="51666">UNDER 16 FEMMINILE GIRONE C</option>
+					<option value="51667">UNDER 16 FEMMINILE GIRONE D</option>
+					<option value="51669">SPAREGGIO U16F PER ACCESSO SECONDA FASE</option>
+				</optgroup>
+				<optgroup label="UNDER 18 FEMMINILE">
+					<option value="51640">UNDER 18 FEMMINILE GIRONE A</option>
+					<option value="51641">UNDER 18 FEMMINILE GIRONE B</option>
+			</select>
+		</label>
+		<label id="lbSocieta" class="size-2">
+			Società:<br />
+			<select name="SId" class="input-select-2" tabindex="5">
+					<option value="">Tutte le societ&agrave;..</option>
+					<option value="3962">A.S.D.POLISPORTIVA SAN NICOLO'</option>
+					<option value="3931">ALSENESE PALLAVOLO A.S.D.</option>
+					<option value="3935">AMICIZIA E SPORT ASD</option>
+					<option value="3932">BOBBIO VOLLEY A.S.D.</option>
+					<option value="3954">CLUB VOLLEY 92</option>
+					<option value="3938">P.G.S. FREEDOM </option>
+					<option value="3933">PALLAVOLO BORGONOVO</option>
+					<option value="3951">PIACENZA VOLLEY S.S.D. A R.L.</option>
+					<option value="3961">RIVER VOLLEY 2001 A.S.D.</option>
+					<option value="3958">VOLLEY BALL PODENZANO</option>
+			</select>
+		</label>
+		<label class="size-0_5">
+			&nbsp;<br />
+			<input type="hidden" name="PId" value="9653" />
+			<input type="submit" name="btFiltro" value="CERCA" class="button bt-search" style="width:100px;" />
+		</label>
+		<label class="size-0_5">
+			&nbsp;<br />
+			<input type="button" name="btXls" onclick="EsportaXls(this.form);" value="Esporta" class="button bt-excel" style="width:100px;" />
+		</label>
+	</form>
+<table class="tbl tbl-risultati">
+	<caption>SECONDA DIVISIONE FEMMINILE GIRONE B</caption>
+	<thead>
+		<tr>
+			<th style="width:40px;">Gara</th>
+			<th style="width:20px;" title="Giornata">G</th>
+			<th style="width:90px;">Data / ora</th>
+			<th style="width:220px;">Squadra casa</th>
+			<th style="width:220px;">Squadra ospite</th>
+			<th style="width:50px;" title="Risultato">Risul.</th>
+			<th style="width:40px;">&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align:center">417</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">17/10/19 21:00</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902675">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902675"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT&lt;/b&gt;&lt;br /&gt;BORGONOVO VAL TIDONE BORGONOVO VAL TIDONE PC&lt;br /&gt;VIA SARMATO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">418</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">15/10/19 21:15</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902676">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902676"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA DI SAN NICOLO&lt;/b&gt;&lt;br /&gt; ROTTOFRENO PC&lt;br /&gt;VIA DON MINZONI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">419</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">15/10/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902677">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902677"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">420</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">18/10/19 21:00</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902678">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902678"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALAZZETTO DELLO SPORT&lt;/b&gt;&lt;br /&gt; CARPANETO PIACENTINO PC&lt;br /&gt;VIA SAN LAZZARO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">421</td>
+			<td style="text-align:center">1</td>
+			<td style="text-align:center">18/10/19 21:15</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902679">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902679"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA MICHELANGELO BUONARROTI&lt;/b&gt;&lt;br /&gt; CAORSO PC&lt;br /&gt;VIA TAVANI &lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">422</td>
+			<td style="text-align:center">2</td>
+			<td style="text-align:center">23/10/19 21:00</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td style="text-align:center" class="risultato" id="Risultato_902680">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902680"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA ELEMENTARE&lt;/b&gt;&lt;br /&gt; PODENZANO PC&lt;br /&gt; VIA DANTE ALIGHIERI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">423</td>
+			<td style="text-align:center">2</td>
+			<td style="text-align:center">24/10/19 21:15</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902681">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902681"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA CADUTI SUL LAVORO&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA RIO LAVAIANA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">424</td>
+			<td style="text-align:center">2</td>
+			<td style="text-align:center">22/10/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902682">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902682"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">425</td>
+			<td style="text-align:center">2</td>
+			<td style="text-align:center">25/10/19 21:00</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902683">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902683"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;CENTRO SPORTIVO CANDIA&lt;/b&gt;&lt;br /&gt;CANDIA BOBBIO PC&lt;br /&gt;LOCALITA&#39; CANDIA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">426</td>
+			<td style="text-align:center">2</td>
+			<td style="text-align:center">22/10/19 21:15</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902684">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902684"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALAZZETTO DELLO SPORT&lt;/b&gt;&lt;br /&gt; CARPANETO PIACENTINO PC&lt;br /&gt;VIA SAN LAZZARO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">427</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">31/10/19 21:00</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902685">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902685"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT&lt;/b&gt;&lt;br /&gt;BORGONOVO VAL TIDONE BORGONOVO VAL TIDONE PC&lt;br /&gt;VIA SARMATO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">428</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">29/10/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902686">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902686"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">429</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">01/11/19 21:00</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902687">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902687"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;CENTRO SPORTIVO CANDIA&lt;/b&gt;&lt;br /&gt;CANDIA BOBBIO PC&lt;br /&gt;LOCALITA&#39; CANDIA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">430</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">01/11/19 21:00</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902688">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902688"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALAZZETTO DELLO SPORT&lt;/b&gt;&lt;br /&gt; CARPANETO PIACENTINO PC&lt;br /&gt;VIA SAN LAZZARO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">431</td>
+			<td style="text-align:center">3</td>
+			<td style="text-align:center">01/11/19 21:15</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902689">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902689"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA MICHELANGELO BUONARROTI&lt;/b&gt;&lt;br /&gt; CAORSO PC&lt;br /&gt;VIA TAVANI &lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">432</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">08/11/19 21:00</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902690">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902690"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA CARDUCCI&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA ROGERIO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">433</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">07/11/19 21:00</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902691">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902691"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT&lt;/b&gt;&lt;br /&gt;BORGONOVO VAL TIDONE BORGONOVO VAL TIDONE PC&lt;br /&gt;VIA SARMATO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">434</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">07/11/19 21:15</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902692">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902692"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA CADUTI SUL LAVORO&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA RIO LAVAIANA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">435</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">06/11/19 21:00</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902693">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902693"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT ALSENO&lt;/b&gt;&lt;br /&gt;ALSENO ALSENO PC&lt;br /&gt;VIA CAVOUR&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">436</td>
+			<td style="text-align:center">4</td>
+			<td style="text-align:center">05/11/19 21:15</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902694">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902694"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA DI SAN NICOLO&lt;/b&gt;&lt;br /&gt; ROTTOFRENO PC&lt;br /&gt;VIA DON MINZONI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">437</td>
+			<td style="text-align:center">5</td>
+			<td style="text-align:center">12/11/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902695">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902695"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">438</td>
+			<td style="text-align:center">5</td>
+			<td style="text-align:center">15/11/19 21:00</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td style="text-align:center" class="risultato" id="Risultato_902696">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902696"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;CENTRO SPORTIVO CANDIA&lt;/b&gt;&lt;br /&gt;CANDIA BOBBIO PC&lt;br /&gt;LOCALITA&#39; CANDIA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">439</td>
+			<td style="text-align:center">5</td>
+			<td style="text-align:center">15/11/19 21:15</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902697">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902697"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA MICHELANGELO BUONARROTI&lt;/b&gt;&lt;br /&gt; CAORSO PC&lt;br /&gt;VIA TAVANI &lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">440</td>
+			<td style="text-align:center">5</td>
+			<td style="text-align:center">15/11/19 21:15</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902698">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902698"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA DI SAN NICOLO&lt;/b&gt;&lt;br /&gt; ROTTOFRENO PC&lt;br /&gt;VIA DON MINZONI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">441</td>
+			<td style="text-align:center">5</td>
+			<td style="text-align:center">13/11/19 21:00</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902699">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902699"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT ALSENO&lt;/b&gt;&lt;br /&gt;ALSENO ALSENO PC&lt;br /&gt;VIA CAVOUR&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">442</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">19/11/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902700">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902700"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">443</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">22/11/19 21:00</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902701">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902701"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;CENTRO SPORTIVO CANDIA&lt;/b&gt;&lt;br /&gt;CANDIA BOBBIO PC&lt;br /&gt;LOCALITA&#39; CANDIA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">444</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">21/11/19 21:00</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902702">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902702"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT&lt;/b&gt;&lt;br /&gt;BORGONOVO VAL TIDONE BORGONOVO VAL TIDONE PC&lt;br /&gt;VIA SARMATO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">445</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">19/11/19 21:15</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902703">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902703"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA CADUTI SUL LAVORO&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA RIO LAVAIANA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">446</td>
+			<td style="text-align:center">6</td>
+			<td style="text-align:center">22/11/19 21:15</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902704">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902704"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA DI SAN NICOLO&lt;/b&gt;&lt;br /&gt; ROTTOFRENO PC&lt;br /&gt;VIA DON MINZONI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">447</td>
+			<td style="text-align:center">7</td>
+			<td style="text-align:center">26/11/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902705">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902705"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">448</td>
+			<td style="text-align:center">7</td>
+			<td style="text-align:center">29/11/19 21:15</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902706">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902706"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA MICHELANGELO BUONARROTI&lt;/b&gt;&lt;br /&gt; CAORSO PC&lt;br /&gt;VIA TAVANI &lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">449</td>
+			<td style="text-align:center">7</td>
+			<td style="text-align:center">27/11/19 21:00</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td style="text-align:center" class="risultato" id="Risultato_902707">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902707"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALAZZETTO DELLO SPORT&lt;/b&gt;&lt;br /&gt; CARPANETO PIACENTINO PC&lt;br /&gt;VIA SAN LAZZARO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">450</td>
+			<td style="text-align:center">7</td>
+			<td style="text-align:center">28/11/19 21:15</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902708">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902708"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA CADUTI SUL LAVORO&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA RIO LAVAIANA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">451</td>
+			<td style="text-align:center">7</td>
+			<td style="text-align:center">27/11/19 21:00</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902709">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902709"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA ELEMENTARE&lt;/b&gt;&lt;br /&gt; PODENZANO PC&lt;br /&gt; VIA DANTE ALIGHIERI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">452</td>
+			<td style="text-align:center">8</td>
+			<td style="text-align:center">02/12/19 21:00</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902710">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902710"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA ELEMENTARE&lt;/b&gt;&lt;br /&gt; PODENZANO PC&lt;br /&gt; VIA DANTE ALIGHIERI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">453</td>
+			<td style="text-align:center">8</td>
+			<td style="text-align:center">03/12/19 21:15</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902711">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902711"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA MICHELANGELO BUONARROTI&lt;/b&gt;&lt;br /&gt; CAORSO PC&lt;br /&gt;VIA TAVANI &lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">454</td>
+			<td style="text-align:center">8</td>
+			<td style="text-align:center">06/12/19 21:00</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902712">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902712"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALAZZETTO DELLO SPORT&lt;/b&gt;&lt;br /&gt; CARPANETO PIACENTINO PC&lt;br /&gt;VIA SAN LAZZARO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">455</td>
+			<td style="text-align:center">8</td>
+			<td style="text-align:center">05/12/19 21:00</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902713">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902713"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALASPORT&lt;/b&gt;&lt;br /&gt;BORGONOVO VAL TIDONE BORGONOVO VAL TIDONE PC&lt;br /&gt;VIA SARMATO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr class="dispari">
+			<td style="text-align:center">456</td>
+			<td style="text-align:center">8</td>
+			<td style="text-align:center">05/12/19 21:15</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902714">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902714"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA CADUTI SUL LAVORO&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA RIO LAVAIANA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">457</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">13/12/19 21:00</td>
+			<td title="BOBBIO VOLLEY A.S.D.">BOBBIO VOLLEY</td>
+			<td title="AMICIZIA E SPORT ASD">AMICIZIA SPORT CAORSO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902715">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902715"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;CENTRO SPORTIVO CANDIA&lt;/b&gt;&lt;br /&gt;CANDIA BOBBIO PC&lt;br /&gt;LOCALITA&#39; CANDIA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">458</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">10/12/19 21:00</td>
+			<td title="RIVER VOLLEY 2001 A.S.D.">FUN FOOD VAP</td>
+			<td title="P.G.S. FREEDOM ">PGS-CV CARPANETO</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902716">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902716"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA COMUNALE&lt;/b&gt;&lt;br /&gt; VIGOLZONE PC&lt;br /&gt;VIA GENERALE DALLA CHIESA&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">459</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">11/12/19 21:00</td>
+			<td title="PIACENZA VOLLEY S.S.D. A R.L.">PIACE VOLLEY VERDE</td>
+			<td title="ALSENESE PALLAVOLO A.S.D.">ALSENESE PALLAVOLO ASD</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902717">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902717"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA CARDUCCI&lt;/b&gt;&lt;br /&gt; PIACENZA PC&lt;br /&gt;VIA ROGERIO&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">460</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">13/12/19 21:15</td>
+			<td title="A.S.D.POLISPORTIVA SAN NICOLO'">FINESTRA 2000 PSN</td>
+			<td title="PALLAVOLO BORGONOVO">ASD PALLAVOLO BORGONOVO </td>
+			<td style="text-align:center" class="risultato" id="Risultato_902718">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902718"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA MEDIA DI SAN NICOLO&lt;/b&gt;&lt;br /&gt; ROTTOFRENO PC&lt;br /&gt;VIA DON MINZONI&lt;/p&gt;" />
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align:center">461</td>
+			<td style="text-align:center">9</td>
+			<td style="text-align:center">11/12/19 21:00</td>
+			<td title="VOLLEY BALL PODENZANO">ECOSYSTEMI V.B.PODE</td>
+			<td title="CLUB VOLLEY 92">CLUB 92 ARDAVOLLEY S</td>
+			<td style="text-align:center" class="risultato" id="Risultato_902719">-</td>
+			<td style="text-align:center">
+				<span id="StatoGara_902719"><img src="/img/statogara/stato0.png" class="tips ris-img" alt="statogara" title="da disputare" /></span>
+				<img src="/img/info_16.png" class="tips ris-img" alt="info" title="
+&lt;p&gt;&lt;b&gt;PALESTRA SCUOLA ELEMENTARE&lt;/b&gt;&lt;br /&gt; PODENZANO PC&lt;br /&gt; VIA DANTE ALIGHIERI&lt;/p&gt;" />
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table class="tbl tbl-classifica">
+	<caption>
+		<div style="overflow:auto; margin: 0 0 5px"><select name="GaraGiornata" class="classifica-select-giornata" onchange="document.location.href='/risultati-classifiche.aspx?ComitatoId=74&amp;StId=1624&amp;DataDa=&amp;StatoGara=&amp;CId=51629&amp;SId=&amp;PId=9653&amp;btFiltro=CERCA&GG=' + this.options[this.selectedIndex].value;">
+		<option value="">Classifica all'ultima giornata..</option>
+<option value="1">Classifica alla giornata n&deg; 1</option>
+<option value="2">Classifica alla giornata n&deg; 2</option>
+<option value="3">Classifica alla giornata n&deg; 3</option>
+<option value="4">Classifica alla giornata n&deg; 4</option>
+<option value="5">Classifica alla giornata n&deg; 5</option>
+<option value="6">Classifica alla giornata n&deg; 6</option>
+<option value="7">Classifica alla giornata n&deg; 7</option>
+<option value="8">Classifica alla giornata n&deg; 8</option>
+<option value="9">Classifica alla giornata n&deg; 9</option>
+</select></div>
+	</caption>
+		<thead>
+			<tr>
+<th style="width: 35px;" title="Posizione">Pos.</th>
+<th style="width: text-align:left;">Squadra</th>
+<th style="width: 50px;">Punti</th>
+<th style="width: 40px;" title="Partite Giocate">PG</th>
+<th style="width: 40px;" title="Partite Vinte">PV</th>
+<th style="width: 40px;" title="Partite Perse">PP</th>
+<th style="width: 40px;" title="Set Fatti">S.F.</th>
+<th style="width: 40px;" title="Set Subiti">S.S.</th>
+<th style="width: 40px;" title="Quoziente Set">Q.S.</th>
+<th style="width: 40px;" title="Punti Fatti">P.F.</th>
+<th style="width: 40px;" title="Punti Subiti">P.S.</th>
+<th style="width: 40px;" title="Quoziente Punti">Q.P.</th>
+<th style="width: 50px;" title="Penalit&agrave;">Penal.</th>
+</tr>
+</thead>
+			<tr class="promozione">
+<td style="text-align:center">1</td>
+<td style="padding: 2px 4px;">ALSENESE PALLAVOLO ASD</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="promozione">
+<td style="text-align:center">2</td>
+<td style="padding: 2px 4px;">AMICIZIA SPORT CAORSO</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="promozione">
+<td style="text-align:center">3</td>
+<td style="padding: 2px 4px;">ASD PALLAVOLO BORGONOVO </td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="promozione">
+<td style="text-align:center">4</td>
+<td style="padding: 2px 4px;">BOBBIO VOLLEY</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="promozione">
+<td style="text-align:center">5</td>
+<td style="padding: 2px 4px;">CLUB 92 ARDAVOLLEY S</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="retrocessione">
+<td style="text-align:center">6</td>
+<td style="padding: 2px 4px;">ECOSYSTEMI V.B.PODE</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="retrocessione">
+<td style="text-align:center">7</td>
+<td style="padding: 2px 4px;">FINESTRA 2000 PSN</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="retrocessione">
+<td style="text-align:center">8</td>
+<td style="padding: 2px 4px;">FUN FOOD VAP</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="retrocessione">
+<td style="text-align:center">9</td>
+<td style="padding: 2px 4px;">PGS-CV CARPANETO</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+			<tr class="retrocessione">
+<td style="text-align:center">10</td>
+<td style="padding: 2px 4px;">PIACE VOLLEY VERDE</td>
+<td style="text-align:center;font-weight: bold;">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+</table>
+<script type="text/javascript">
+	window.addEvent('domready', function () {
+		var tip = new Tips('.tips', { className: 'risultati-tips' });
+		$$('.link_classifica').cerabox({ displayTitle: false, group:false });
+	});
+</script>
+	</div>
+	</div>
+		</div>
+	</div>
+	</div>
+	<div id="layout-area5" style="width:100%">
+		<div class="col col-4">
+
+<div id="BoxId_28375" name="BoxId_28375" class="box box-4">
+	<div class=""style="background: transparent;"><div class="box-text"><div style="text-align:center">
+<p><strong>FEDERAZIONE ITALIANA PALLAVOLO&nbsp;- Comitato Territoriale di Piacenza</strong>&nbsp;<br />
+Via Calciati 14 - 29122 Piacenza - P.IVA 01382321006 -&nbsp;C.F: 05268880589<br />
+Fax: 0523/1880178 -&nbsp;Email:&nbsp;<a href="mailto:comitato@fipavpiacenza.com">comitato@fipavpiacenza.com</a><br />
+Copyright 2017-2018&nbsp;- Tutti i diritti riservati. - <a href="/pagina.aspx?PId=13168">Privacy &amp; Cookie</a></p>
+</div>
+</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104753719-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<!--Pagina generata in 00:00:00.2499965 secondi-->
+</body>
+</html>
+
+

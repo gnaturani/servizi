@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="it">
+<head>
+		<title>FIPAV Comitato Territoriale Piacenza - Risultati</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="/mobile/img/ico.gif" sizes="16x16" type="image/gif">
+    <link rel="icon" href="/mobile/img/ico.png"   sizes="57x57" type="image/png">
+    <link rel="icon" href="/mobile/img/vector.svg"   sizes="any"   type="image/svg+xml">
+
+	<script src="/mobile/js/mootools-core-1.4.5-full-compat.js" type="text/javascript"></script>
+	<script src="/mobile/js/mootools-more-1.4.0.1.js" type="text/javascript"></script>
+	<script src="/mobile/js/funzioni.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="/mobile/css/style.asp" media="screen" />
+	<link rel="stylesheet" href="/mobile/css/style_nav.asp" media="screen" />
+	<link rel="stylesheet" href="/mobile/css/style_risultati.asp" media="screen" />
+
+	<script type="text/javascript">
+
+		function ApriChiudi(ciId) {
+			var ul = $('ul' + ciId);
+			var h = 0;
+			if (ul.getStyle('height') + '' == '0px') {
+				//ul.setStyle('display', 'none');
+				ul.setStyle('height', '');
+				h = ul.getSize().y.toInt();
+				ul.setStyle('height', 0);
+				//ul.setStyle('display', 'block');
+
+				//alert(h);
+				ul.tween('height', h);
+
+				var ss = $('ciId' + ciId).getPosition().y.toInt() - $('ciId' + ciId).getSize().y.toInt() - 30;
+				//alert($('ciId' + ciId).getPosition().y.toInt() + '\n' + h);
+				//setTimeout('$(document.body).scrollTo(0, ' + ss + ');', 1000);
+
+				//var myFx = new Fx.Scroll(window).toElementCenter($('ciId' + ciId));
+				var myFx = new Fx.Scroll(window).start(0, $('ciId' + ciId).getPosition().y.toInt() - 53);
+
+			}
+			else {
+				ul.tween('height', 0);
+			}
+
+
+		}
+
+		function ApriChiudiClassifica() {
+			if ($('contenitoreClassifica').getStyle('display') == 'none') {
+				$('contenitoreClassifica').setStyle('display', 'block');
+			}
+			else {
+				$('contenitoreClassifica').setStyle('display', 'none');
+			}
+		}
+
+		function VisualizzaFoto(id) {
+			$(id).setStyle('display', (($(id).getStyle('display') == 'none') ? 'block' : 'none'));
+		}
+		//CaricaPaginaGet(pagina, dati, target, funzioneOnSuccess)
+		window.addEvent('domready', function () {
+
+		});
+	</script>
+	<style type="text/css">
+
+
+
+	</style>
+</head>
+<body>	<header>
+
+		<h1 onclick="document.location.href='/mobile/';">FIPAV - CT Piacenza</h1>
+
+		<!--74-->
+	</header>	<nav>
+		<ul id="ulMenu">
+			<li class="clsMenuNews"><a href="news.asp">News</a></li>
+			<li class="clsMenuGare"><a href="risultati.asp" class="menuPaginaAttuale">Gare</a></li>
+			<li class="clsMenuDove"><a href="pallavolodove.asp">Dove?</a></li>
+			<li class="clsMenuComunicati"><a href="comunicati.asp">Comunicati</a></li>
+			<li class="clsMenuSocieta"><a href="societa.asp">Societ&agrave;</a></li>
+		</ul>
+		<select class="comboMenu" style="top:2.5em;width:100%;position:fixed;z-index:250;" onchange="document.location.href=this.options[this.selectedIndex].value">
+			<option value="/mobile/news.asp">News</option>
+<option value="/mobile/risultati.asp" selected="selected">Gare</option>
+<option value="/mobile/pallavolodove.asp">Dove?</option>
+<option value="/mobile/comunicati.asp">Comunicati</option>
+<option value="/mobile/societa.asp">Societ&agrave;</option>
+
+		</select>
+	</nav>
+<script type="text/javascript">
+window.addEvent('load', function () {
+  var el=document.getElementById('contenitorePagina');
+  var height = Math.max(el.clientHeight, el.offsetHeight);
+  console.log(height);
+  window.parent.postMessage(height+40, "*");
+});
+</script>
+
+	<div id="contenitorePagina">
+		<form style="margin-top:4em; text-align:center;"><select name="StagioneId" style="padding:0.5em;" onchange="document.location.href='/mobile/risultati.asp?StagioneId='+this.options[this.selectedIndex].value;"><option value="1505">Stagione Sportiva 2018 / 2019</option>
+<option value="1386">Stagione Sportiva 2017 / 2018</option>
+</select></form>
+		<div style="margin-top:1em; text-align:center;" id="accordion">
+			<h2 class="elencoCampionati" id="ciId45220" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=45875';">PRIMA DIVISIONE FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45220" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45875">1DF</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45219" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46667';">PRIMA DIVISIONE MASCHILE</h2>
+			<ul class="elencoCampionati2" id="ul45219" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46667">1DM GIRONE A</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45221" style="cursor:pointer;" onclick="ApriChiudi(45221);">SECONDA DIVISIONE FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45221" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45876">2DF GIRONE A</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45877">2DF GIRONE B</a></li><li><a href="/mobile/risultati.asp?CampionatoId=47108">2DF GIRONE C</a></li><li><a href="/mobile/risultati.asp?CampionatoId=47109">2DF GIRONE D</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45810" style="cursor:pointer;" onclick="ApriChiudi(45810);">TORNEI</h2>
+			<ul class="elencoCampionati2" id="ul45810" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46051">3&#176; MEMORIAL POGGI</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45811">8&#176; MEMORIAL SAMANTHA PINI</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45224" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46776';">TROFEO CONI FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45224" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46776">TROFEO CONI S3 RED</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45223" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46367';">TROFEO CONI MASCHILE</h2>
+			<ul class="elencoCampionati2" id="ul45223" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46367"> TROFEO CONI MASCHILE S3 RED</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId46363" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46365';">UNDER 12 MISTO 6vs6</h2>
+			<ul class="elencoCampionati2" id="ul46363" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46365">U12 MISTO 6vs6</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45227" style="cursor:pointer;" onclick="ApriChiudi(45227);">UNDER 13 FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45227" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45831">U13F GIRONE A</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45832">U13F GIRONE B</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46962">U13F GIRONE C</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46963">U13F GIRONE D</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId46362" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46364';">UNDER 13 FEMMINILE 3vs3 PROMO</h2>
+			<ul class="elencoCampionati2" id="ul46362" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46364">U13F 3vs3 PROMO</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45230" style="cursor:pointer;" onclick="ApriChiudi(45230);">UNDER 14 FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45230" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45833">U14F GIRONE A</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45834">U14F GIRONE B</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45835">U14F GIRONE C</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45836">U14F GIRONE D</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46983">U14F GIRONE E</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46984">U14F GIRONE F</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46985">U14F GIRONE G</a></li><li><a href="/mobile/risultati.asp?CampionatoId=46986">U14F GIRONE H</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45229" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46192';">UNDER 14 MASCHILE</h2>
+			<ul class="elencoCampionati2" id="ul45229" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46192">U14M</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45232" style="cursor:pointer;" onclick="ApriChiudi(45232);">UNDER 16 FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45232" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45837">U16F GIRONE A</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45840">U16F GIRONE B</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45838">U16F GIRONE C</a></li><li><a href="/mobile/risultati.asp?CampionatoId=45839">U16F GIRONE D</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45231" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46193';">UNDER 16 MASCHILE</h2>
+			<ul class="elencoCampionati2" id="ul45231" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46193">U16M</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45235" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=45883';">UNDER 18 FEMMINILE</h2>
+			<ul class="elencoCampionati2" id="ul45235" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=45883">U18F</a></li></ul>
+			<h2 class="elencoCampionati" id="ciId45233" style="cursor:pointer;" onclick="document.location.href='/mobile/risultati.asp?CampionatoId=46376';">UNDER 18 MASCHILE</h2>
+			<ul class="elencoCampionati2" id="ul45233" style="height:0;"><li><a href="/mobile/risultati.asp?CampionatoId=46376">U18M</a></li></ul>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

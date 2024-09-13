@@ -1,0 +1,207 @@
+{
+    "kind": "calendar#events",
+    "etag": "\"p33g9pqsdvq4eo0g\"",
+    "summary": "PGS&CV - 2DF",
+    "description": "PGS FREEDOM & CV - 2 Divisione Femminile",
+    "updated": "2020-09-27T09:07:39.836Z",
+    "timeZone": "Europe/Rome",
+    "accessRole": "reader",
+    "defaultReminders": [],
+    "nextSyncToken": "COCc643-iOwCEAAYAQ==",
+    "items": [
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202394719314000\"",
+      "id": "5snr5jj57vdh2ilv300ouj3g21",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NXNucjVqajU3dmRoMmlsdjMwMG91ajNnMjFfMjAyMDEwMDZUMTgzMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-27T09:01:23.000Z",
+      "updated": "2020-09-27T09:02:39.657Z",
+      "summary": "Allenamento",
+      "description": "Ricordare il foglio FIPAV firmato per il Covid-19",
+      "location": "Palazzetto dello Sport e Bocciodromo di Carpaneto Piacentino, Via S. Lazzaro, 26, 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-10-06T20:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-10-06T22:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20201231T225959Z;INTERVAL=2;BYDAY=TU"
+      ],
+      "iCalUID": "5snr5jj57vdh2ilv300ouj3g21@google.com",
+      "sequence": 1
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202394771548000\"",
+      "id": "63v2n1t6r2lqvoncfiaqqhju6t",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NjN2Mm4xdDZyMmxxdm9uY2ZpYXFxaGp1NnRfMjAyMDA5MjlUMTgzMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-24T14:49:27.000Z",
+      "updated": "2020-09-27T09:03:05.774Z",
+      "summary": "Allenamento",
+      "location": "Palazzetto dello Sport e Bocciodromo di Carpaneto Piacentino, Via S. Lazzaro, 26, 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-09-29T20:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-09-29T22:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20201229T225959Z;INTERVAL=2;BYDAY=TU"
+      ],
+      "iCalUID": "63v2n1t6r2lqvoncfiaqqhju6t@google.com",
+      "sequence": 1
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202394823666000\"",
+      "id": "43dndhd568kpqr363dhedpnm32",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NDNkbmRoZDU2OGtwcXIzNjNkaGVkcG5tMzJfMjAyMDA5MzBUMTYzMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-24T14:48:48.000Z",
+      "updated": "2020-09-27T09:03:31.833Z",
+      "summary": "Allenamento",
+      "location": "Palazzetto dello Sport e Bocciodromo di Carpaneto Piacentino, Via S. Lazzaro, 26, 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-09-30T18:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-09-30T20:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20201230T225959Z;INTERVAL=2;BYDAY=WE"
+      ],
+      "iCalUID": "43dndhd568kpqr363dhedpnm32@google.com",
+      "sequence": 1
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202394898866000\"",
+      "id": "2mpukt6bhcl85rk5q22m8c5na1",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=Mm1wdWt0NmJoY2w4NXJrNXEyMm04YzVuYTFfMjAyMDEwMDdUMTYzMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-27T09:04:09.000Z",
+      "updated": "2020-09-27T09:04:09.433Z",
+      "summary": "Allenamento",
+      "description": "Portare il foglio FIPAV firmato per il Covid-19",
+      "location": "Palazzetto dello Sport e Bocciodromo di Carpaneto Piacentino, Via S. Lazzaro, 26, 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-10-07T18:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-10-07T20:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20201230T225959Z;INTERVAL=2;BYDAY=WE"
+      ],
+      "iCalUID": "2mpukt6bhcl85rk5q22m8c5na1@google.com",
+      "sequence": 0
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202394980184000\"",
+      "id": "7e50p972t3f8kda4lokk54vg7i",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2U1MHA5NzJ0M2Y4a2RhNGxva2s1NHZnN2lfMjAyMDEwMDJUMTYzMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-24T14:49:07.000Z",
+      "updated": "2020-09-27T09:04:50.092Z",
+      "summary": "Allenamento",
+      "location": "Palazzetto dello Sport e Bocciodromo di Carpaneto Piacentino, Via S. Lazzaro, 26, 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-10-02T18:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-10-02T20:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20210101T225959Z;BYDAY=FR"
+      ],
+      "iCalUID": "7e50p972t3f8kda4lokk54vg7i@google.com",
+      "sequence": 1
+     },
+     {
+      "kind": "calendar#event",
+      "etag": "\"3202395319672000\"",
+      "id": "3qbvvv8ho0moij85g2s9q1pct1",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=M3FidnZ2OGhvMG1vaWo4NWcyczlxMXBjdDFfMjAyMDEwMDhUMTkwMDAwWiBzMWZiODhudjdzaGcxOHIybnZ0am1xdWE3OEBn",
+      "created": "2020-09-27T09:07:39.000Z",
+      "updated": "2020-09-27T09:07:39.836Z",
+      "summary": "Allenamento",
+      "location": "Newsporting29013 \"PalaChero\", 29013 Carpaneto Piacentino PC, Italia",
+      "creator": {
+       "email": "guido.naturani@gmail.com"
+      },
+      "organizer": {
+       "email": "s1fb88nv7shg18r2nvtjmqua78@group.calendar.google.com",
+       "displayName": "PGS&CV - 2DF",
+       "self": true
+      },
+      "start": {
+       "dateTime": "2020-10-08T21:00:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "end": {
+       "dateTime": "2020-10-08T22:30:00+02:00",
+       "timeZone": "Europe/Rome"
+      },
+      "recurrence": [
+       "RRULE:FREQ=WEEKLY;WKST=MO;UNTIL=20210101T225959Z;BYDAY=TH"
+      ],
+      "iCalUID": "3qbvvv8ho0moij85g2s9q1pct1@google.com",
+      "sequence": 0
+     }
+    ]
+   }
